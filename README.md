@@ -1,6 +1,8 @@
-# transform_io_v2
+# Flutter Components Sandbox
 
-A new Flutter application.
+A Flutter application used as a sandbox to get used to and build new widgets. 
+
+Take what you need in lib/components/ 
 
 ## Getting Started
 
