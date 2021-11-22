@@ -7,7 +7,7 @@ class PulseButton extends StatefulWidget {
     final String imagePath;
 
 
-    PulseButton(@required this.imagePath, @required this.onTap,);
+    PulseButton(@required this.imagePath, @required this.onTap);
 
     @override
     _PulseButtonState createState() => _PulseButtonState();

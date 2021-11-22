@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'components/animated_container.dart';
+import 'components/vertical_dot.dart';
 
 
 void main() {
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       debugShowCheckedModeBanner: false,
-      home: AnimatedContainerExample(),
+      home: VerticalDotTraceAnimation(),
     );
   }
 }
