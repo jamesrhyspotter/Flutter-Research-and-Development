@@ -2,8 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'components/card_flip.dart';
-import 'components/loading_list_scroll_view.dart';
+import 'components/animated_container.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       debugShowCheckedModeBanner: false,
-      home: LoadingListScrollView(),
+      home: AnimatedContainerExample(),
     );
   }
 }
