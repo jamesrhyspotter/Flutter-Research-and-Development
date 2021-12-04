@@ -3,6 +3,8 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'components/animated_container.dart';
+import 'components/countdown_timer.dart';
+import 'components/stepper_list.dart';
 import 'components/vertical_dot.dart';
 
 
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       debugShowCheckedModeBanner: false,
-      home: VerticalDotTraceAnimation(),
+      home: StepperList(),
     );
   }
 }
