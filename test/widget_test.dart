@@ -11,20 +11,26 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:transform_io_v2/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp());
+  testWidgets("Description of Test", (WidgetTester tester) async {
+    // Use keys to find the widgets we want to test
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    final targetWidget = find.byKey(ValueKey("widgetKey"));
+    final targetWidget2 = find.byKey(ValueKey("widget2Key"));
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
+
+    // execute the actual test
+    // we need to wrap out widget in a material app widget as we are extracting it as a stand alone widget
+    await tester.pumpWidget(MaterialApp(home: targetWidget));
+    await tester.enterText(targetWidget, "Input Text");
+    await tester.tap(targetWidget2);
+
+    // Rebuilding the widget
+    // set state for widget tests
     await tester.pump();
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    // check outputs
+    expect(find.text("Input text"), findsOneWidget);
+
+
   });
 }
