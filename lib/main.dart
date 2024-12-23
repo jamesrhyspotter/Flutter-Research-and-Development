@@ -1,11 +1,6 @@
-import 'dart:math';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'components/animated_container.dart';
-import 'components/countdown_timer.dart';
-import 'components/stepper_list.dart';
-import 'components/vertical_dot.dart';
+
+import 'widgets/indicators/stepper_list.dart';
 
 
 void main() {

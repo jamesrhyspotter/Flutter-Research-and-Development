@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:transform_io_v2/components/pulse_button.dart';
 
 class VerticalDotTraceAnimation extends StatefulWidget {
   const VerticalDotTraceAnimation({Key? key}) : super(key: key);
