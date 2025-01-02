@@ -1,6 +1,6 @@
-# Flutter Mastery
+# Flutter Research and Development
 
-This is a sandbox for Flutter components and developing my flutter skills. 
+This notebook is a collection of projects pertaining to Flutter in order to exhibit comptenecies as a high level flutter developer.
 
 This will be used to build new widgets and components, as well as complex logic for various apps that can be replicated. 
 
